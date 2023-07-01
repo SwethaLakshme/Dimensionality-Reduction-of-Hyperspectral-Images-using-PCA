@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PCA</title>
+    <style>
+      body{
+        background-color:#850000;
+      }
+      input[type=submit] {
+  background-color: #DC8449;
+  border: none;
+  color: black;
+  align-content: center;
+  justify-content: center; 
+  align-items: center;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: inline-block;
+  cursor: pointer;
+}
+      .desc{
+        background-color: #FFDB89;
+        background-position: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="desc">
+    <h1 style="text-align:center;">Dimensionality Reduction of Hyperspectral images using PCA</h1>
+    <p style="text-align:justify;">Hyperspectral Imaging is a technique that uses a wide spectrum of light to study
+      and analyse a huge volume of information in the images and helps in better
+      classification of these data. These are high-dimensional data that contain
+      voluminous information. These high-dimensional data include thousands of
+      features in which many unrelated features might influence the quality and
+      accuracy of data. The presence of these irrelevant data results in an increase in
+      computational time, the density of the image, etc., Dimension reduction of
+      Hyperspectral images is the process of removal of redundant and irrelevant data
+      thus reducing the number of input variables used to improve the accuracy and
+      reduce the training time of data. The idea is to implement a solution that
+      compresses the high-dimensional data and classifies them for practical use.</p>
+      <div style="text-align:center;">
+      <h2>Click the button below to predict the accuracy</h2>
+    <form action="{{ url_for('predict') }}" method="post">
+      <input type="submit" style ="text-align:center;" value="Predict">
+    </form>
+  </div>
+  </div>
+  </div>
+  </body>
+</html>
